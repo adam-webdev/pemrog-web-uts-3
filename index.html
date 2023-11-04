@@ -291,6 +291,34 @@
     </div>
   </div>
 
+  <div id="Kalkulator" class="section" style="background-color: goldenrod;">
+    <div class="container">
+      <div class="judul" >
+        <span style="border-bottom: 4px solid white;">Kalkulator</span>
+      </div>
+      <div class="row">
+        <div class="calculator">
+        <input type="text" id="display" readonly>
+        <button class="btn btn-sm btn-primary" onclick="tambahInput('1')">1</button>
+        <button class="btn btn-sm btn-primary" onclick="tambahInput('2')">2</button>
+        <button class="btn btn-sm btn-primary" onclick="tambahInput('3')">3</button><br>
+        <button class="btn btn-sm btn-primary" onclick="tambahInput('4')">4</button>
+        <button class="btn btn-sm btn-primary" onclick="tambahInput('5')">5</button>
+        <button class="btn btn-sm btn-primary" onclick="tambahInput('6')">6</button><br>
+        <button class="btn btn-sm btn-primary" onclick="tambahInput('7')">7</button>
+        <button class="btn btn-sm btn-primary" onclick="tambahInput('8')">8</button>
+        <button class="btn btn-sm btn-primary" onclick="tambahInput('9')">9</button><br>
+        <button class="btn btn-sm btn-primary" onclick="tambahInput('0')">0</button>
+        <button class="btn btn-sm btn-primary" onclick="tambahInput('+')">+</button>
+        <button class="btn btn-sm btn-primary" onclick="tambahInput('-')">-</button><br>
+        <button class="btn btn-sm btn-primary" onclick="tambahInput('*')">*</button>
+        <button class="btn btn-sm btn-primary" onclick="tambahInput('/')">/</button>
+        <button class="btn btn-sm btn-primary" onclick="hitung('=')">=</button><br>
+        <button class="btn btn-sm btn-secondary" onclick="reset()">Reset</button>
+    </div>
+      </div>
+    </div>
+  </div>
   <!-- modal bootsrap -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -364,6 +392,19 @@
         }
         prevScrollPos = currentScrollPos;
 
+    }
+
+    function tambahInput(value) {
+        document.getElementById('display').value += value;
+    }
+
+    function reset() {
+        document.getElementById('display').value = '';
+    }
+
+    function hitung() {
+        var result = eval(document.getElementById('display').value);
+        document.getElementById('display').value = result;
     }
   </script>
 </html>

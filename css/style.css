@@ -1,0 +1,259 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+  scroll-behavior:smooth;
+}
+html{
+  scroll-behavior: smooth;
+}
+.navbar, .menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  top: 0;
+  width: 100%;
+  /* padding: 0 100px; */
+  position: sticky;
+  transition: top 0.3s;
+  background-color: rgb(250, 250, 250);
+  z-index: 999;
+  box-shadow:  0 0 4px 2px rgba(0,0,0,0.1);
+}
+.sidebar{
+  height: 100vh;
+  display: flex;
+  margin-top: -25px;
+  flex-direction: column;
+  padding: 0 10px;
+  padding-top: 30px;
+  width: 220px;
+  position: fixed;
+  margin-left: -220px;
+  background-color:rgb(238, 238, 238);
+  transition: 1s cubic-bezier(.36,-0.01,0,.77);
+  z-index: 99999;
+}
+.sidebar p {
+  font-size: 16px;
+  color: black;
+  font-family: 'Poppins';
+  font-weight: 900;
+}
+.sidebar.closed{
+  margin-left: 0;
+}
+
+.garis-navbar{
+  border: 1px solid black;
+}
+.menu a,.sidebar a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: 'Poppins';
+  padding: 10px 18px;
+
+}
+.menu a:hover ,.sidebar a:hover{
+  background-color: rgb(255, 200, 3);
+  border-radius: 4px;
+}
+.logo a{
+  text-decoration: none;
+}
+.logo p {
+  font-size: 22px;
+  color: black;
+  font-family: 'Poppins';
+  font-weight: 900;
+}
+.logo p .titik{
+  color: rgb(255, 200, 3);
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.hamburger{
+  display: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tutup{
+  font-size: 34px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+.tutup:hover{
+  color: rgb(255, 200, 3);
+}
+.landing{
+  height: 90vh;
+  z-index: 9;
+}
+.landing .left{
+  padding-top: 120px;
+}
+
+
+.button-bio{
+  width: 35%;
+  padding: 14px 18px;
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 18px;
+  text-decoration: none;
+  border: none;
+  font-weight: 700;
+  background-color:rgb(255, 200, 3) ;
+  color: black;
+  box-shadow: 0 1px 7px rgba(0,0,0,.19);
+  margin-bottom: 10px;
+}
+.button-bio:hover{
+  background-color:rgb(224, 177, 10) ;
+
+}
+.landing .right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:120px;
+}
+
+
+.landing .right img{
+  /* width:100%; */
+  border: 10px dotted black;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 1px 17px rgba(12, 12, 12, 0.19);
+}
+
+
+.landing .tagline{
+  -webkit-animation: type 5s steps(80, end) infinite;
+  animation: type 5s steps(80, end) infinite;
+  font-size: 34px;
+  font-weight: 800;
+  display: block;
+  width: 100%;
+  white-space:nowrap;
+  overflow:hidden;
+}
+@-webkit-keyframes type{
+  from { width: 0; }
+}
+@keyframes type {
+  from { width: 0; }
+}
+
+.caption{
+  margin-top: 40px;
+  font-size: 22px;
+  word-spacing: 8px;
+}
+
+/* pendidikan */
+.section{
+  display: flex;
+  padding-top: 50px;
+  height: 100vh;
+  background-color: white;
+  scroll-behavior: smooth;
+}
+.judul{
+  text-align: center;
+}
+.judul span{
+ font-weight: 900;
+ font-size: 28px;
+  border-bottom: 4px solid rgb(255, 200, 3);
+}
+.section img{
+  width: 100%;
+}
+.section .row{
+  align-items: center;
+  padding-top: 50px;
+}
+.section img{
+  width: 100%;
+}
+@media screen and (max-width:800px){
+  .menu{
+    display: none;
+  }
+  .logo p {
+    font-size: 18px;
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 900;
+  }
+  .hamburger{
+    display: block;
+    font-size: 20px;
+  }
+  .hamburger:hover{
+    background-color: rgb(237, 237, 237);
+  }
+
+  .navbar {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    padding: 0 10px;
+    transition: top 0.3s;
+    z-index: 99999;
+  }
+  .tagline{
+    font-size: 26px;
+    /* border-bottom: 8px solid rgb(255, 200, 3); */
+  }
+  .caption{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:450px){
+ .tagline{
+    font-size: 22px;
+    /* border-bottom: 8px solid rgb(255, 200, 3); */
+  }
+  .caption{
+    font-size: 16px;
+  }
+  .button-bio{
+    width: 100%;
+    padding: 8px 14px;
+    font-size: 16px;
+  }
+  .landing .row{
+    flex-direction: column-reverse;
+  }
+  .landing .left{
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .landing .right img{
+    /* width:100%; */
+    border: 4px dotted black;
+    width: 180px;
+  }
+  .table tr td {
+    font-size: 14px;
+  }
+  .section{
+    margin-top: 60px;
+  }
+
+}

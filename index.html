@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/bootstrap.min.js"></script>
+  <title>UTS | Pemrog Web </title>
+</head>
+<body style="background-color: rgb(250, 250, 250);">
+  <!-- navbar -->
+  <div class="navbar">
+      <div class="container">
+          <div class="logo">
+            <a href="#">
+              <p>Adam Dwi Maulana <span class="titik">.</span></p>
+            </a>
+          </div>
+          <div class="hamburger " onclick="toggleSidebar()">&#9776;</div>
+          <div class="menu">
+            <a href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal">Biodata</a>
+            <a href="#pendidikan"> Pendidikan</a>
+            <a href="#pengalaman"> Pengalaman</a>
+            <a href="#keahlian"> Keahlian</a>
+          </div>
+      </div>
+      <span class="garis-navbar"></span>
+  </div>
+  <!-- tutup navbar -->
+
+  <!-- sidebar -->
+  <div class="sidebar">
+    <p>Adam Dwi Maulana <span class="titik">.</span></p>
+     <a href="#">Biodata</a>
+      <a href="#"> Pendidikan</a>
+      <a href="#"> Pekerjaan</a>
+      <a href="#"> Kalkulator</a>
+      <span class="tutup" onclick="closeSidebar()">&#8592;</span>
+  </div>
+  <!-- tutup sidebar -->
+  <div class="container landing">
+    <div class="row mt-4">
+      <div class="col-md-7 left">
+        <span class="tagline">Free Palestine <img width="60px" src="./img/palestina.png" alt="Free Palestine"></span>
+        <p class="caption">Hai, saya <b> Adam dwi maulana </b> mahasiswa <b>Universitas Pelita Bangsa </b> Prodi <b>Teknik Informatika </b> angkatan Tahun 2022, Saya tinggal di Bekasi, Jawa Barat, Indonesia.
+        </p>
+        <button type="button" class="button-bio" data-bs-toggle="modal" data-bs-target="#exampleModal">Lihat Biodata</button>
+      </div>
+      <div class="col-md-5 right">
+        <img src="./img/adam.jpeg" alt="adam webdev">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal Biodata-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Biodata :</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-bordered table-striped">
+                <tr>
+                  <td>Nama :</td>
+                  <td>Adam Dwi Maulana</td>
+                </tr>
+                <tr>
+                  <td>Usia :</td>
+                  <td>24 Tahun</td>
+                </tr>
+                <tr>
+                  <td>Jenis Kelamin :</td>
+                  <td>Laki-laki</td>
+                </tr>
+                <tr>
+                  <td>Agama :</td>
+                  <td>Islam</td>
+                </tr>
+                <tr>
+                  <td>Status :</td>
+                  <td>Lajang / Mahasiswa</td>
+                </tr>
+                <tr>
+                  <td>Hobi :</td>
+                  <td>Sepak Bola, Membaca, Ngoding</td>
+                </tr>
+                <tr>
+                  <td>Harta Kekayaan  :</td>
+                  <td>220 Ribu</td>
+                </tr>
+                <tr>
+                  <td>Tempat Tinggal  :</td>
+                  <td>Tambun, Bekasi</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pendidikan" class="section">
+    <div class="container">
+      <div class="judul">
+        <span>Pendidikan</span>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./img/pendidikan.png" alt="pendidikan">
+        </div>
+        <div class="col-md-6">
+          <h5>Riwayat Pendidikan.</h5>
+          <div class="table-responsive">
+
+            <table class="table table-bordered table-striped">
+              <thead >
+                <tr class="text-dark" style="font-weight: bold;">
+                  <td>No</td>
+                  <td>Nama Sekolah</td>
+                  <td>Kota</td>
+                  <td>Tahun Masuk</td>
+                  <td>Tahun Lulus</td>
+                  <td>Penghargaan</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>SDN Jatimulya 06</td>
+                  <td>Bekasi</td>
+                  <td>2005</td>
+                  <td>2011</td>
+                  <td>Rank Top 5</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>SMPN 9 Tambun Selatan</td>
+                  <td>Bekasi</td>
+                  <td>2011</td>
+                  <td>2014</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>SMK Yapin Bekasi</td>
+                  <td>Bekasi</td>
+                  <td>2014</td>
+                  <td>2017</td>
+                  <td>Lulusan Siswa Terbaik</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Universitas Pelita Bangsa</td>
+                  <td>Bekasi</td>
+                  <td>2022</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pengalaman" class="section">
+    <div class="container">
+      <div class="judul">
+        <span>Pengalaman</span>
+      </div>
+      <div class="row">
+
+        <div class="col-md-6">
+          <h5>Pengalaman Bekerja.</h5>
+          <div class="table-responsive">
+
+            <table class="table table-bordered table-striped">
+              <thead >
+                <tr class="text-dark" style="font-weight: bold;">
+                  <td>No</td>
+                  <td>Nama Perusahaan</td>
+                  <td>Posisi</td>
+                  <td>Kota</td>
+                  <td>Tahun Masuk</td>
+                  <td>Tahun Selesai</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>PT Yamaha Music Mfg Ind</td>
+                  <td>Pulogadung, Jakarta</td>
+                  <td>Operator Produksi</td>
+                  <td>2018</td>
+                  <td>2022</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>RPH Jatimulya Sapi qurban</td>
+                  <td>Perawat Sapi Qurban </td>
+                  <td>Bekasi</td>
+                  <td>2014</td>
+                  <td>Sekarang</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Dirumah</td>
+                  <td>Freelance</td>
+                  <td>Bekasi</td>
+                  <td>2020</td>
+                  <td>Sekarang</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="./img/pengalaman.png" alt="pengalaman">
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div id="keahlian" class="section">
+    <div class="container">
+      <div class="judul">
+        <span>Keahlian</span>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./img/biodata.png" alt="keahlian">
+        </div>
+        <div class="col-md-6">
+          <h5>Keahlian.</h5>
+          <div class="table-responsive">
+
+            <table class="table table-bordered table-striped">
+              <thead >
+                <tr class="text-dark" style="font-weight: bold;">
+                  <td>No</td>
+                  <td>Nama</td>
+                  <td>Deskripsi</td>
+                  <td>Pencapian</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>HTML</td>
+                  <td>Membuat Web dengan HTML 5</td>
+                  <td>Membuat website</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>CSS</td>
+                  <td>Styling website</td>
+                  <td>Layouting Dan Responsive web</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Javascript</td>
+                  <td>Interaktif Wen, DOM Element, Animasi</td>
+                  <td>Style dan animasi dengan js</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>PHP</td>
+                  <td>Formulir / CRUD</td>
+                  <td>Membuat form input </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Laravel</td>
+                  <td>Membuat Dashboard halaman admin</td>
+                  <td>Membuat API, Authorization, CRUD, Report dan lain-lain </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal bootsrap -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5>Haloo</h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+  <script>
+    const toggleSidebar = () => {
+      document.querySelector(".sidebar").classList.toggle('closed')
+    }
+    const closeSidebar = () => {
+      document.querySelector(".sidebar").classList.toggle('closed')
+    }
+
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    behavior: 'smooth',
+                    top: targetElement.offsetTop,
+                });
+            }
+        });
+    });
+
+
+
+    const tinggiLayar = window.innerHeight
+    let prevScrollPos = pageYOffset
+    const lebarLayar = window.innerWidth
+    window.onscroll = function(){
+      console.log(prevScrollPos)
+      let currentScrollPos = window.pageYOffset;
+
+      if (currentScrollPos > window.innerHeight) {
+        document.querySelector(".navbar").style.boxShadow = "none";
+        } else {
+            document.querySelector(".navbar").style.boxShadow = "0 0 4px 2px rgba(0,0,0,0.1)";
+          }
+        if (prevScrollPos > currentScrollPos) {
+            // Pengguna menggulir ke atas, munculkan navbar
+            document.querySelector(".navbar").style.top = "0";
+            document.querySelector(".navbar").style.boxShadow = "0 0 4px 2px rgba(0,0,0,0.1)";
+        } else {
+            // Pengguna menggulir ke bawah, sembunyikan navbar
+            document.querySelector(".navbar").style.top = "-80px";
+            // Sesuaikan dengan tinggi navbar Anda
+        }
+        prevScrollPos = currentScrollPos;
+
+    }
+  </script>
+</html>

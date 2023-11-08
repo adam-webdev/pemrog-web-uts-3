@@ -5,4 +5,4 @@ Uts pemrogramman web semester 3
 
 Hasil tampilan
 
-![Uploading Media Player 11_9_2023 2_32_03 AM.png…]()
+![./img/land.png](./img/land.png)
